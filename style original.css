@@ -1,0 +1,168 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #ffffff; /* Dark background for the header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.header .logo img {
+    height: 40px; /* Adjust based on your logo size */
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px; /* Spacing between social icons */
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+/* Sidebar Styling with Unique Picture Icons */
+.sidebar {
+    position: fixed;
+    top: 100px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.45);
+    padding: 10px;
+    width: 70px;
+    height: 400px;
+}
+
+.sidebar-icon {
+    margin: 0;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    transition: transform 0.9s;
+}
+
+.sidebar-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar-icon:hover {
+    transform: scale(1.5);
+}
+
+
+
+/* Main Content */
+.main-content {
+    margin-left: 10px;
+    padding: 100px;
+    border-radius: 10px;
+}
+
+.animated-slider {
+    width: 50%;
+    height: 500px;
+    background: linear-gradient(45deg, #ff9, rgb(255, 0, 153), #9ff);
+    border-radius: 10px;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Service Cards */
+.service-cards {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    margin-left: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 50px; /* Adjust the icon size as needed */
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    background-color: #ddd;
+    transform: translateY(-10px);
+}
+
+/* Comments Section */
+.comments-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.send-comment, .customer-comments {
+    width: 40%;
+}
+
+#commentForm input, #commentForm textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #1778f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1778f2;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
